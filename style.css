@@ -1,4 +1,4 @@
-#answers {
+.answers {
     display: grid;
     grid-template-columns: repeat(2, auto);
     width: 200px;
@@ -24,4 +24,12 @@ h1{
 
 .next {
    align-self: right;
+}
+.WinHighlight{
+    background-color: greenyellow;
+    color: white;
+}
+.LoseHighlight{
+    background-color: tomato;
+    color: white;
 }
