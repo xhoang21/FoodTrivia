@@ -5,7 +5,7 @@
     height: 50px;
     margin: 50px auto;
     background-color: rgb(157, 154, 154);
-    
+    text-align: center;
 }
 h2 {
     text-align: center;
@@ -32,4 +32,13 @@ h1{
 .LoseHighlight{
     background-color: tomato;
     color: white;
+}
+#feedback{
+    text-align: center;
+}
+.Score{
+    text-align: right;
+}
+#Butn{
+    text-align: center;
 }
