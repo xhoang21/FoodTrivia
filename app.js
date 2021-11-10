@@ -139,6 +139,7 @@ function ButtonAswr (butnIdex){
     console.log(butnIdex)
     if (parseInt(shuffleQue[currentQuestion].correct) == butnIdex){
         Feedback.innerHTML = "<h3>Correct!</h3>";
+        Feedback.style.display = "block"
         Feedback.style.backgroundColor= "green"
         let presetScore = parseInt(score.innerHTML)
         presetScore += 10
@@ -148,6 +149,7 @@ function ButtonAswr (butnIdex){
         let presetScore = parseInt(score.innerHTML)
         presetScore -= 10
         score.innerText = presetScore.toString()
+        Feedback.style.display = "block"
         Feedback.innerHTML = "<h3>Wrong!</h3>"
         Feedback.style.backgroundColor= "red"
     } 
@@ -172,6 +174,7 @@ function nextquestion() {
     console.log("nextquestion")
     currentQuestion ++
     showquestion()
+    Feedback.style.display = "none"
     
 }
 const Timer = document.querySelector(".Timer")
