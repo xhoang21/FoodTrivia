@@ -13,15 +13,6 @@ h2 {
 h1{
     text-align: center;
 }
-
-
-/* #correct {
-   background-color: green;
-} 
-#wrong {
-    background-color: red;
-} */
-
 .next {
    align-self: right;
 }
@@ -37,7 +28,8 @@ h1{
     text-align: center;
 }
 .Score{
-    text-align: right;
+    text-align: center;
+    
 }
 #Butn{
     text-align: center;
