@@ -33,13 +33,13 @@ body {
     font-family:Verdana, Geneva, Tahoma, sans-seriff;
 }
 .next {
-    background-color:rgb(220, 185, 120);
+    background-color:rgb(208, 197, 177);
     padding:20px;
     border-radius:10px;
     display:flex;
-    align-content: center;
-    justify-self: center;
-    justify-content: center;
+    align-content: right;
+    justify-self: right;
+    justify-content: right;
     font-size:25px;
     font-family:sVerdana, Geneva, Tahoma, sans-serif;
 }
