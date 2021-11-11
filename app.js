@@ -317,13 +317,14 @@ function StartGame(){
     console.log("StartGame")
     GameBox.style.display = "block"
     intro.style.display = "none"
-    showquestion()
+    
 }
 
 NextBtn.addEventListener("click",nextquestion)
 function nextquestion() {
     console.log("nextquestion")
     currentQuestion ++
+    showquestion()
     Feedback.style.display = "none"
     
 }
