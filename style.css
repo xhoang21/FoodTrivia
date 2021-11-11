@@ -32,7 +32,7 @@ body {
     font-size:25px;
     font-family:Verdana, Geneva, Tahoma, sans-seriff;
 }
-.next {
+#Butn {
     background-color:rgb(208, 197, 177);
     padding:20px;
     border-radius:10px;
