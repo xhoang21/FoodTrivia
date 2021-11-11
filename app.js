@@ -214,7 +214,7 @@ var questionsarr = [
                     C:"lima bean",
                     D:"black-eyed peas"
         },
-        correct:"2"
+        correct:"1"
     },
     {
         question:"what are peanuts",
@@ -231,7 +231,6 @@ const AnsrLineUp = document.querySelectorAll(".answer")
 const queLine = document.getElementById("Question")
 // // this function is for shuffling the questions 
 let shuffleQue =[], currentQuestion = 0  
-
 function QueLineUp(){
     while (shuffleQue.length < 25){ 
         let random = questionsarr[Math.floor(Math.random() * questionsarr.length)]
@@ -245,9 +244,7 @@ function QueLineUp(){
 const allAnswr = document.querySelectorAll("#answerSet")
 QueLineUp()
 console.log(currentQuestion)
-
 console.log(shuffleQue)
-
 function showquestion (){
 
 queLine.innerHTML = shuffleQue[currentQuestion].question
@@ -258,8 +255,6 @@ document.getElementById("C").innerText = shuffleQue[currentQuestion].Answers.C
 document.getElementById("D").innerText = shuffleQue[currentQuestion].Answers.D
 }
 showquestion()
-
-
 // assinging the answers to a button
 const answerButtons = [
     document.getElementById("A"),
@@ -294,13 +289,32 @@ answerButtons.forEach( (item,i) => {
        item.addEventListener("click",() => ButtonAswr(i));   
    }   
 )
- 
-const NextBtn = document.querySelector(".next")
-const restartBtn = document.querySelector(".restart")
-NextBtn.innerHTML ="Next Question"
+const Timer = document.querySelector(".Timer")
+var Sec = 180
+var interval = setInterval(function(){
+    Timer.innerText = Sec;
+    Sec--;
+    if( Sec == 0){
+        clearInterval(interval);
+        Timer.innerText = "Game Over";
+    }
+}, 1000)
 
-function resetquestion(){
-    
+
+const NextBtn = document.querySelector(".next")
+const startBtn = document.querySelector(".start")
+const GameBox = document.querySelector(".Game")
+const Restbtn = document.querySelector(".restbtn")
+const intro = document.querySelector(".intro")
+
+NextBtn.innerHTML ="Next Question"
+startBtn.innerHTML = "Start"
+
+startBtn.addEventListener("click",StartGame)
+function StartGame(){
+    console.log("StartGame")
+    GameBox.style.display = "block"
+    intro.style.display = "none"
     
 }
 
@@ -312,13 +326,10 @@ function nextquestion() {
     Feedback.style.display = "none"
     
 }
-const Timer = document.querySelector(".Timer")
-var Sec = 180
-var interval = setInterval(function(){
-    Timer.innerText = Sec;
-    Sec--;
-    if( Sec == 0){
-        clearInterval(interval);
-        Timer.innerText = "Game Over";
-    }
-}, 1000)
+
+
+Restbtn.addEventListener("click",ResetGame)
+function ResetGame () {
+    console.log("reset Game")
+}   
+

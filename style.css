@@ -44,6 +44,20 @@ body {
     font-size:25px;
     font-family:Verdana, Geneva, Tahoma, sans-seriff;
 }
+.restbtn {
+    height: 50px;
+    background-color:rgb(208, 197, 177);
+    padding:20px;
+    margin: auto;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin: auto;
+    margin-top: 15px;
+    font-size:25px;
+    font-family:Verdana, Geneva, Tahoma, sans-seriff;
+}
 
 #feedback{
     height: 50px;
@@ -100,4 +114,35 @@ h2 {
     justify-content:center;
     font-size:25px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.Game {
+    display: none;
+}
+h4 {
+    background-color:rgb(208, 197, 177);
+    max-width: 45%;
+    margin: auto;
+    padding:15px;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom: 20px;
+    font-size:18px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif; 
+}
+#startbtn{
+    height: 50px;
+    background-color:rgb(208, 197, 177);
+    padding:15px;
+    margin: auto;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    max-width: 150px;
+    margin-top: 15px;
+    font-size:20px;
+    font-weight: bolder;
+    font-family:Verdana, Geneva, Tahoma, sans-seriff;
 }

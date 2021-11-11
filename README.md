@@ -11,8 +11,9 @@ CSS
 Dom JS
 
 #Installation instructions 
-This is a browers base game so just click on the link below
+This is a browers base game so just click on the link below.
 
+https://pages.git.generalassemb.ly/xuyenhoang/Food-Trivia/
 
 
 #WireFrames

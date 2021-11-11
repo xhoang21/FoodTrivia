@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Ahhhhhh</title>
         <link rel="stylesheet" href="style.css">
-       
     </head>
     <style>
         body {
@@ -17,30 +16,32 @@
         }
         </style>
     <body> 
-        
-            <h1 class="gameTitle">Food Trivia!</h1>
-            
+        <h1 class="gameTitle">Food Trivia!</h1>
+            <div class ="intro">
+                <h4 class="Instructions">Try to see how many questions you can answer correctly in 3 minutes. Answer correctly, you earn 10 points. Answer Wrong, you lose 10 points.</h4>
+                <button id="startbtn" class="start"></button>
+            </div>
+        <div class="Game" type="reset">
             <div id=Time>Time:
                 <span class="Timer"></span>
             </div>    
             <div class="Score">Player Score:
                 <span id="playerScore">0</span>
             </div>
-            <h2 id="Question"></h2>
-            <h3 id='feedback'></h3>
-                <div id='answerSet'>
-                    <button class="answer" id='A'></button>
-                    <button class="answer" id='B'></button>
-                    <button class="answer" id='C'></button>
-                    <button class="answer" id='D'></button>
-                </div>    
-            <div>
+                <h2 id="Question"></h2>
+                <h3 id='feedback'></h3>
+                    <div id='answerSet'>
+                        <button class="answer" id='A'></button>
+                        <button class="answer" id='B'></button>
+                        <button class="answer" id='C'></button>
+                        <button class="answer" id='D'></button>
+                    </div>    
+                <div>
             
-            <div id=Butn>
+        </div>       
                 <button class='next'></button>
-            </div>
-            </div>
-        </div>
-    
+                <button class = "restbtn" type="Rest" value="reset">Restart Game!</button>
+
+         </div>   
     </body>
 </html>
