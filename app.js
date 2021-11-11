@@ -73,7 +73,7 @@ var questionsarr = [
         correct:"2"
     },
     {
-        question: "who was the invortor of Instant Ramen?",
+        question: "who was the inventor of Instant Ramen?",
        Answers: { A: "Momofuku Ando", 
                     B: "Koki Ando",
                     C: "Soichi Honda",
@@ -180,6 +180,51 @@ var questionsarr = [
         },
         correct:"3"
     },
+    {
+        question:"What turns a plain martini into a dirty martini?",
+        Answers:{A:"adding olives",
+                    B:"adding olive juice ",
+                    C:"adding  mashed olives",
+                    D:"all of the above"
+        },
+        correct:"1"
+    },
+    {
+        question:"What is the USA’s favorite flavor of ice cream?",
+        Answers:{A:"Chocolate",
+                    B:"Strawberry ",
+                    C:"Mint choclate chip",
+                    D:"Vanilla"
+        },
+        correct:"3"
+    },
+    {
+        question:"What is the USA’s favorite flavor of ice cream?",
+        Answers:{A:"Chocolate",
+                    B:"Strawberry ",
+                    C:"Mint choclate chip",
+                    D:"Vanilla"
+        },
+        correct:"3"
+    },
+    {
+        question:"What is another name for garbanzo beans?",
+        Answers:{A:"green pea",
+                    B:"Chickpeas",
+                    C:"lima bean",
+                    D:"black-eyed peas"
+        },
+        correct:"2"
+    },
+    {
+        question:"what are peanuts",
+        Answers:{A:"A nut",
+                    B:"A legumes",
+                    C:"A seed",
+                    D:"none of the above"
+        },
+        correct:"1"
+    }  
     ];
 
 const AnsrLineUp = document.querySelectorAll(".answer")
@@ -188,7 +233,7 @@ const queLine = document.getElementById("Question")
 let shuffleQue =[], currentQuestion = 0  
 
 function QueLineUp(){
-    while (shuffleQue.length < 20){ 
+    while (shuffleQue.length < 25){ 
         let random = questionsarr[Math.floor(Math.random() * questionsarr.length)]
         if (!shuffleQue.includes(random)) {
             shuffleQue.push(random)
@@ -229,12 +274,12 @@ function ButtonAswr (butnIdex){
     console.log(butnIdex)
     if (parseInt(shuffleQue[currentQuestion].correct) == butnIdex){
         Feedback.innerHTML = "<h3>Correct!</h3>";
-        Feedback.style.display = "block"
+        
         Feedback.style.backgroundColor= "green"
         let presetScore = parseInt(score.innerHTML)
         presetScore += 10
         score.innerText = presetScore.toString()
-        
+        Feedback.style.display = "block"
     } else {
         let presetScore = parseInt(score.innerHTML)
         presetScore -= 10
@@ -268,7 +313,7 @@ function nextquestion() {
     
 }
 const Timer = document.querySelector(".Timer")
-var Sec = 30
+var Sec = 180
 var interval = setInterval(function(){
     Timer.innerText = Sec;
     Sec--;
