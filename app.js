@@ -274,11 +274,13 @@ function ButtonAswr (butnIdex){
         let presetScore = parseInt(score.innerHTML)
         presetScore += 10
         score.innerText = presetScore.toString()
+
         Feedback.style.display = "block"
     } else {
         let presetScore = parseInt(score.innerHTML)
         presetScore -= 10
         score.innerText = presetScore.toString()
+
         Feedback.style.display = "block"
         Feedback.innerHTML = "<h3>Wrong!</h3>"
         Feedback.style.backgroundColor= "red"
@@ -315,14 +317,13 @@ function StartGame(){
     console.log("StartGame")
     GameBox.style.display = "block"
     intro.style.display = "none"
-    
+    showquestion()
 }
 
 NextBtn.addEventListener("click",nextquestion)
 function nextquestion() {
     console.log("nextquestion")
     currentQuestion ++
-    showquestion()
     Feedback.style.display = "none"
     
 }
@@ -330,6 +331,7 @@ function nextquestion() {
 
 Restbtn.addEventListener("click",ResetGame)
 function ResetGame () {
-    console.log("reset Game")
+    location.reload();
+    console.log("reset")
 }   
 
