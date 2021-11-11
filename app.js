@@ -90,6 +90,96 @@ var questionsarr = [
        },
        correct:"3"
     },
+    {
+        question:"what is the worlds most expensive spice, in terms of weight?",
+        Answers:{A:"cumin",
+                    B:"black pepper",
+                    C:"saffron",
+                    D:"caycane"
+        },
+        correct:"2"
+    },
+    {
+        question:"Although considered as nuts, these are actually seeds. What is it?",
+        Answers:{A:"Almonds",
+                    B:"cashews",
+                    C:"peanuts",
+                    D:"peacans"
+        },
+        correct:"0"
+    },
+    {
+        question:"What fast food restaurant is credited with introducing the first modern-day drive-thru window?",
+        Answers:{A:"McDonalds",
+                    B:"Burger King",
+                    C:"Wendy's",
+                    D:"Big Boy"
+        },
+        correct:"2"
+    },
+    {
+        question:"What is the only fruit to have seeds on the outside?",
+        Answers:{A:"strawberry",
+                    B:"sugar apple",
+                    C:"Dragon Fruit",
+                    D:"lychee"
+        },
+        correct:"0"
+    },
+    {
+        question:"What vitamin gives sweet potatoes and carrots their orange color?",
+        Answers:{A:"Vitamin B",
+                    B:"Vitamin D",
+                    C:"Vitamin C",
+                    D:"Vitamin A"
+        },
+        correct:"3"
+    },
+    {
+        question:"Hickory trees produce which types of nuts?",
+        Answers:{A:"Pecans",
+                    B:"cashews",
+                    C:"almonds",
+                    D:"peanuts"
+        },
+        correct:"0"
+    },
+    {
+        question:"In which country did the Cheesecake originate?",
+        Answers:{A:"United States",
+                    B:"Great Britian",
+                    C:"France",
+                    D:"Greece"
+        },
+        correct:"3"
+    },
+    {
+        question:"Coca-cola first time sold in which American state?",
+        Answers:{A:"South Carolina",
+                    B:"Georgia",
+                    C:"Tennessee",
+                    D:"Kentucky"
+        },
+        correct:"1"
+    },
+    {
+        question:"Halo Halo is a special and popular dessert of which country?",
+        Answers:{A:"Philippine",
+                    B:"Malaysia",
+                    C:"Indonesia",
+                    D:"Taiwan"
+        },
+        correct:"0"
+    },
+    {
+        question:"Watermelon contains how much percentage of water?",
+        Answers:{A:"90%",
+                    B:"80%",
+                    C:"75%",
+                    D:"92%"
+        },
+        correct:"3"
+    },
     ];
 
 const AnsrLineUp = document.querySelectorAll(".answer")
@@ -98,7 +188,7 @@ const queLine = document.getElementById("Question")
 let shuffleQue =[], currentQuestion = 0  
 
 function QueLineUp(){
-    while (shuffleQue.length < 10){ 
+    while (shuffleQue.length < 20){ 
         let random = questionsarr[Math.floor(Math.random() * questionsarr.length)]
         if (!shuffleQue.includes(random)) {
             shuffleQue.push(random)
